@@ -103,7 +103,7 @@ public class HomeActivity extends Activity {
         mWebView = mBinding.webView;
         mErrorView = mBinding.errorView;
 
-//        initWebSetting();
+        initWebSetting();
 
         initWebViewClient();
 
@@ -119,34 +119,34 @@ public class HomeActivity extends Activity {
         });
     }
 
-//    private void initWebSetting() {
-//        WebSettings webSetting = mWebView.getSettings();
-//        webSetting.setAllowFileAccess(true);
-//        webSetting.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
-//        webSetting.setSupportZoom(false);
-//        webSetting.setBuiltInZoomControls(false);
-//        webSetting.setUseWideViewPort(true);
-//        webSetting.setSupportMultipleWindows(false);
-//        webSetting.setLoadWithOverviewMode(true);
-//        webSetting.setAppCacheEnabled(true);
-//        webSetting.setDatabaseEnabled(true);
-//        webSetting.setDomStorageEnabled(true);
-//        webSetting.setJavaScriptEnabled(true);
-//        webSetting.setGeolocationEnabled(true);
-//        webSetting.setAppCacheMaxSize(Long.MAX_VALUE);
-//        webSetting.setAppCachePath(this.getDir("appcache", 0).getPath());
-//        webSetting.setDatabasePath(this.getDir("databases", 0).getPath());
-//        webSetting.setGeolocationDatabasePath(this.getDir("geolocation", 0)
-//                .getPath());
-//        // webSetting.setPageCacheCapacity(IX5WebSettings.DEFAULT_CACHE_CAPACITY);
-//        webSetting.setPluginState(WebSettings.PluginState.ON_DEMAND);
-//        webSetting.setRenderPriority(WebSettings.RenderPriority.HIGH);
-//    }
+   private void initWebSetting() {
+       /* WebSettings webSetting = mWebView.getSettings();
+       webSetting.setAllowFileAccess(true);
+       webSetting.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
+       webSetting.setSupportZoom(false);
+       webSetting.setBuiltInZoomControls(false);
+       webSetting.setUseWideViewPort(true);
+       webSetting.setSupportMultipleWindows(false);
+       webSetting.setLoadWithOverviewMode(true);
+       webSetting.setAppCacheEnabled(true);
+       webSetting.setDatabaseEnabled(true);
+       webSetting.setDomStorageEnabled(true);
+       webSetting.setJavaScriptEnabled(true);
+       webSetting.setGeolocationEnabled(true);
+       webSetting.setAppCacheMaxSize(Long.MAX_VALUE);
+       webSetting.setAppCachePath(this.getDir("appcache", 0).getPath());
+       webSetting.setDatabasePath(this.getDir("databases", 0).getPath());
+       webSetting.setGeolocationDatabasePath(this.getDir("geolocation", 0)
+               .getPath());       
+       webSetting.setJavaScriptEnabled(true);
+       webSetting.setPluginState(WebSettings.PluginState.ON_DEMAND);
+       webSetting.setRenderPriority(WebSettings.RenderPriority.HIGH); */
+   }
 
     private void initWebViewClient() {
 
         mWebView.setWebViewClient(new WebViewClient() {
-
+        
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 view.loadUrl(url);
@@ -167,6 +167,7 @@ public class HomeActivity extends Activity {
                 super.onReceivedError(view, errorCode, description, failingUrl);
             }
         });
+        
 
     }
 

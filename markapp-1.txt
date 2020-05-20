@@ -1,0 +1,5 @@
+e:\
+
+cd E:/JavaWork/AutoGenApk
+
+.\gradlew -q -P appName=MasterChenApp -P webHomeUrl=http://630sq.com/index.php -P appLauncherImgPath=E:/JavaWork/AutoGenApk/img/m_app_launcher.png -P splashImgPath=E:/JavaWork/AutoGenApk/img/m_splash_img.png -P storeFile=E:/JavaWork/AutoGenApk/masterchen-key.keystore -P storePassword=987654 -P keyPassword=987654 -P keyAlias=masterchenkey app:inputArgsToPackage

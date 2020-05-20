@@ -7,3 +7,11 @@
 /build
 /captures
 .externalNativeBuild
+/.settings
+/.vscode
+/.idea
+/app/.settings
+/app/.classpath
+/app/.project
+/app/.idea
+/.project
